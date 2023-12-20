@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.article p {
+    font-size: 1.4rem;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content max-content;
+    height: 100%;
+}
+
+header {
+    background: #065E7C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: 1.2rem;
+}
+
+header form {
+    flex: 1;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    color: white;
+    background: #387E96;
+    border: none;
+    border-radius: .8rem;
+}
+
+.input-wrapper input::placeholder {
+    color: white;
+}
+
+.avatar {
+    width: 4.2rem;
+    border-radius: 50%;
+}
+
+section img {
+    max-width: 43.4rem;
+    border-radius: .5rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin: 3rem 2.5rem;
+}
+
+.feedback {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.title .feedback img {
+    width: 4rem;
+}
+
+.content {
+    margin: 3rem 2.5rem;
+    box-sizing: content-box;
+    color: #121214;
+    line-height: 2.8em;
+}
+
+aside {
+    margin: 0 2.5rem 3rem;
+}
+
+aside h1 {
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.article {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.article img {
+    width: 15.1rem;
+    height: 8.4rem;
+    aspect-ratio: 16/9;
+    border-radius: .5rem;
+}
+
+.figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer {
+    background: #387E96;
+    padding: 2.6rem 1.6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* Media Frame */
+@media (min-width: 768px) {
+    section img {
+        max-width: 78rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4rem 10rem;
+        gap: 3rem;
+    }
+
+    .content {
+        margin-bottom: 0;
+    }
+
+    header {
+        padding: 1.6rem 10rem;
+    }
+
+    section img {
+        max-width: 80rem;
+    }
+
+    .title {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
